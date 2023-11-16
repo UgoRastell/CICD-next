@@ -7,7 +7,7 @@ import AboutComponent from './about-component'
 // Cypress Component Test
 describe('<AboutComponent />', () => {
   it('should render and display expected content', () => {
-    
+    // Mount the React component for the About page
     cy.mount(<AboutComponent />)
 
     // The new page should contain an h1 with "About page"
