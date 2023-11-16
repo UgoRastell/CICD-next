@@ -57,7 +57,7 @@ jobs:
       - run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "\
           ls -lah && \
-          cd nws-cicd && \
+          cd CICD-next && \
           git pull && \
           npm ci && \
           npm run build && \
