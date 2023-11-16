@@ -8,6 +8,8 @@ jobs:
         steps:
             - run: ls -lah
             - uses: actions/checkout@v4
+            - run: npm ci
+            - run: run build
             - run: ls -lah
 
 #test:
